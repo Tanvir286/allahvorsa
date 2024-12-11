@@ -9,8 +9,7 @@ import ResturentList from '../../components/layout/ResturentList';
 
 const Shop = () => {
 
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    console.log(windowWidth);
+   
     
 
     const router = useRouter();
@@ -22,16 +21,7 @@ const Shop = () => {
 
 
    /*===(useEffect Start)===*/
-    /* UseEffect part start */
-    useEffect(() => {
-        const handleResize = () => setWindowWidth(window.innerWidth);
-
-        // Add event listener for window resize
-        window.addEventListener("resize", handleResize);
-
-        // Cleanup event listener on component unmount
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    
     /* UseEffect part end */
 
   return (
